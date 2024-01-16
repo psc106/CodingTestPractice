@@ -1,6 +1,7 @@
 #include "Q20240115.h"
 
 
+
 Q_20240115::Q_20240115() {
 
     vector<string> q11 = { "muzi", "ryan", "frodo", "neo" };
@@ -44,16 +45,25 @@ Q_20240115::Q_20240115() {
     vector<vector<string>> q311 = { {"blue", "red", "orange", "red"},{"red", "red", "blue", "orange"},{"blue", "orange", "red", "red"},{"orange", "orange", "red", "blue"} };
     vector<vector<string>> q312 = { {"yellow", "green", "blue"},{"blue", "green", "yellow"},{"yellow", "blue", "blue"} };
 
-    int q321[] = {1, 0 };
-    int q331[] = {1, 1 };
+    int q321[] = { 1, 0 };
+    int q331[] = { 1, 1 };
 
     q3_1.push_back(q311);
     q3_1.push_back(q312);
 
     q3_2.insert(q3_2.begin(), q321, q321 + 2);
     q3_3.insert(q3_3.begin(), q331, q331 + 2);
-}
 
+    vector<vector<int>> q411 = { { {1, 20300104, 100, 80}, {2, 20300804, 847, 37}, {3, 20300401, 10, 8} } };
+    string q42[] = {"data"};
+    int q43[] = {20300501};
+    string q44[] = {"remain"};
+    q4_1.push_back(q411);
+    q4_2.insert(q4_2.begin(), q42, q42 + 1);
+    q4_3.insert(q4_3.begin(), q43, q43 + 1);
+    q4_4.insert(q4_4.begin(), q44, q44 + 1);
+
+}
 
     /*
 Q1 ¹®Á¦ ¼³¸í
@@ -330,9 +340,9 @@ return ÇÏµµ·Ï solution ÇÔ¼ö¸¦ ¿Ï¼ºÇØ ÁÖ¼¼¿ä. ´Ü, Á¶°ÇÀ» ¸¸Á·ÇÏ´Â µ¥ÀÌÅÍ´Â Ç×»ó Ç
 
 [[1, 20300104, 100, 80], [2, 20300804, 847, 37], [3, 20300401, 10, 8]]	"date"	20300501	"remain"	[[3,20300401,10,8],[1,20300104,100,80]]
 */
-vector<vector<int>> solutionQ4(vector<vector<int>> data, string ext, int val_ext, string sort_by) {
+vector<vector<int>> Q_20240115::solutionQ4(vector<vector<int>> data, string ext, int val_ext, string sort_by) {
 
-    std::unordered_map<string, int> mappingData = { {"code", 0},{"date", 1},{"maximum,2",2}, {"remain", 3}};
+    std::unordered_map<string, int> mappingData = { {"code", 0},{"date", 1},{"maximum",2}, {"remain", 3}};
 
     int diffIndex = mappingData[ext];
     int sortIndex = mappingData[sort_by];
@@ -352,13 +362,17 @@ vector<vector<int>> solutionQ4(vector<vector<int>> data, string ext, int val_ext
         }
     }
 
-    for (int i = 0; i < successData.size(); i++) {
-
-        std::cout << successData[i][0] << endl;
-    }
-
     return successData;
 }
-void Result4() {
+void Q_20240115::Result4() {
 
+    auto data = solutionQ4(q4_1[0], q4_2[0], q4_3[0], q4_4[0]);
+
+    for (int i = 0; i < data.size(); i++) {
+
+        for (int j = 0; j < data.size(); j++) {
+
+            cout << data[i][j] << endl;
+        }
+    }
 }

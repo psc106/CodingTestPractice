@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <string>
 #include <vector>
@@ -17,6 +18,11 @@ public:
     vector<vector<vector<string>>> q3_1;
     vector<int> q3_2;
     vector<int> q3_3;
+
+    vector<vector<vector<int>>> q4_1;
+    vector<string> q4_2;
+    vector<int> q4_3;
+    vector<string> q4_4;
 
     Q_20240115();
     int solutionQ1(vector<string> friends, vector<string> gifts);
