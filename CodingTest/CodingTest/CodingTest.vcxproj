@@ -130,10 +130,10 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Q20240115.cpp" />
     <ClCompile Include="Q20240116.cpp" />
+    <ClCompile Include="Q20240117.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Q20240115.h" />
-    <ClInclude Include="Q20240116.h" />
+    <ClInclude Include="header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

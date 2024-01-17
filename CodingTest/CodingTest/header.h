@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
+#include <algorithm>
+#include <list>
 
 using namespace std;
 
@@ -34,3 +37,27 @@ public:
     vector<vector<int>> solutionQ4(vector<vector<int>> data, string ext, int val_ext, string sort_by);
     void Result4();
 }; 
+
+
+
+class Q_20240116 {
+public:
+    Q_20240116();
+
+    int solutionQ1(int a, int b);
+    int solutionQ2(int a, int b);
+    int solutionQ3(int a);
+    int solutionQ4(string ineq, string eq, int n, int m);
+    vector<string> solutionQ5(vector<string> players, vector<string> callings);
+};
+
+class Q_20240117 {
+public:
+    Q_20240117();
+
+    string solutionQ1(string);
+    int solutionQ2(int a, int d, vector<bool> included);
+    int solutionQ3(int a, int, int);
+    int solutionQ4(vector<int> num_list);
+    int solutionQ5(vector<int> num_list);
+};

@@ -24,12 +24,12 @@
     <ClCompile Include="Q20240116.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Q20240117.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Q20240115.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Q20240116.h">
+    <ClInclude Include="header.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
