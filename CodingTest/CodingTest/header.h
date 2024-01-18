@@ -61,3 +61,21 @@ public:
     int solutionQ4(vector<int> num_list);
     int solutionQ5(vector<int> num_list);
 };
+
+class Q_20240118 {
+public:
+    Q_20240118();
+
+    vector<int> solutionQ1(vector<int> num_list);
+    int solutionQ2(int n, string control);
+    string solutionQ3(vector<int> numLog);
+    vector<int> solutionQ4(vector<int> arr, vector<vector<int>> queries);
+    vector<int> solutionQ5(vector<int> arr, vector<vector<int>> queries);
+    vector<int> solutionQ6(vector<int> arr, vector<vector<int>> queries);
+    vector<int> solutionQ7(int l, int r);
+    vector<int> solutionQ8(int start_num, int end_num);
+    vector<int> solutionQ9(int n);
+    vector<int> solutionQ10(vector<int> arr);
+    vector<int> solutionQ11(vector<string> park, vector<string> routes);
+    vector<int> solutionQ12(string today, vector<string> terms, vector<string> privacies);
+};
