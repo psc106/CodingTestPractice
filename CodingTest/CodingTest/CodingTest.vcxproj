@@ -131,6 +131,8 @@
     <ClCompile Include="Q20240115.cpp" />
     <ClCompile Include="Q20240116.cpp" />
     <ClCompile Include="Q20240117.cpp" />
+    <ClCompile Include="Q20240118.cpp" />
+    <ClCompile Include="Q20240119.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

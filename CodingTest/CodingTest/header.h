@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <map>
+#include <set>
 #include <unordered_map>
 #include <unordered_set>
 #include <algorithm>
@@ -78,4 +80,20 @@ public:
     vector<int> solutionQ10(vector<int> arr);
     vector<int> solutionQ11(vector<string> park, vector<string> routes);
     vector<int> solutionQ12(string today, vector<string> terms, vector<string> privacies);
+};
+
+class Q_20240119_0201 {
+public:
+    Q_20240119_0201();
+
+    int solutionQ01(int a, int b, int c, int d);
+    string solutionQ02(string my_string, vector<int> index_list);
+    int solutionQ03(string number);
+    string solutionQ04(string my_string, vector<vector<int>> queries);
+    vector<int> solutionQ05(vector<string> intStrs, int k, int s, int l);
+    string solutionQ06(vector<string> my_strings, vector<vector<int>> parts);
+    string solutionQ07(string my_string, int n);
+    vector<string> solutionQ08(string my_string);
+    int solutionQ09(string my_string, string is_suffix);
+    vector<int> solutionQ10(vector<string> grid);
 };
